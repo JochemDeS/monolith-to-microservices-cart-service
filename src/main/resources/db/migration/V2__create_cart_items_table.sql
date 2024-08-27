@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS cart_items(
+    id BIGSERIAL PRIMARY KEY NOT NULL,
+    cart_id BIGSERIAL NOT NULL,
+    product_id BIGSERIAL NOT NULL,
+    quantity INTEGER,
+    CONSTRAINT fk_cart_id FOREIGN KEY (cart_id) REFERENCES carts(id) ON DELETE CASCADE
+);
