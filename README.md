@@ -136,3 +136,7 @@ public class JWTRequestFilter extends OncePerRequestFilter {
 
 De Cart Service beheert nu zelfstandig de winkelmanden voor gebruikers, dus het is belangrijk om de logica rondom winkelmanden 
 volledig te scheiden van andere services, zoals de User Service. Verwijzingen naar winkelmanden vanuit de User Service moeten worden verwijderd.
+
+## Implementeer Order service
+
+Ga naar de [Order Service](https://github.com/jochemdeschepper/monolith-to-microservices-order-service) om de volgende microservice te implementeren.
